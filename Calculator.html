@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<style>
+			.container{
+				background-color: #ccc;
+				width: 525px;
+			}
+			.display{
+				width: 470px;
+				background-color: black;
+				border-style: solid;
+				border-color: white;
+				border-width: 3px;
+				margin: 10px;
+				border-radius: 10px;
+			}
+			.click{
+				width: 100px;
+				margin: 10px;
+			}
+			.large{
+				width: 222px;
+				margin: 10px;
+			}
+			.display h3{
+				font-size: 25px;
+				text-align: right;
+				padding: 10px;
+				color: white;
+			}
+			@media(max-width: 550px){
+				.container{
+					width: 300px;
+				}
+				.display{
+					width: 260px;
+					border-width: 2px;
+					margin: 5px;
+				}
+				.click{
+					width: 54px;
+					margin: 5px;
+				}
+				.large{
+					width: 121px;
+					margin: 5px;
+				}
+			}
+			@media(max-width: 320px){
+				.container{
+					width: 270px;
+				}
+				.display{
+					width: 227px;
+					border-width: 2px;
+					margin: 5px;
+				}
+				.click{
+					width: 50px;
+					margin: 3px;
+				}
+				.large{
+					width: 110px;
+					margin: 3px;
+				}
+			}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="display">
+				<h3>0.</h3>
+			</div>
+			<div>
+				<button type="button" class="click btn btn-default">7</button>
+				<button type="button" class="click btn btn-default">8</button>
+				<button type="button" class="click btn btn-default">9</button>
+				<button type="button" class="click btn btn-primary">/</button>
+			</div>
+			<div>
+				<button type="button" class="click btn btn-default">4</button>
+				<button type="button" class="click btn btn-default">5</button>
+				<button type="button" class="click btn btn-default">6</button>
+				<button type="button" class="click btn btn-primary">*</button>
+			</div>
+			<div>
+				<button type="button" class="click btn btn-default">1</button>
+				<button type="button" class="click btn btn-default">2</button>
+				<button type="button" class="click btn btn-default">3</button>
+				<button type="button" class="click btn btn-primary">-</button>
+			</div>
+			<div>
+				<button type="button" class="click btn btn-default">00</button>
+				<button type="button" class="click btn btn-default">0</button>
+				<button type="button" class="click btn btn-default">.</button>
+				<button type="button" class="click btn btn-primary">+</button>
+			</div>
+			<div>
+				<button type="button" class="large btn btn-danger">Clear</button>
+				<button type="button" class="large btn btn-primary">=</button>
+			</div>	
+		</div>
+	</body>
+</html>
