@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"borde",
+				"border-radius\tproperty"
+			],
+			[
+				"al",
+				"align-content\tproperty"
+			],
+			[
+				"align",
+				"align-self\tproperty"
+			],
+			[
+				"border",
+				"border-color\tproperty"
+			],
+			[
+				"background",
+				"background-color\tproperty"
+			],
+			[
+				"max-",
+				"max-width\tproperty"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
 				"back",
 				"background-color\tproperty"
 			],
@@ -18,10 +46,6 @@
 			[
 				"col",
 				"color\tproperty"
-			],
-			[
-				"background",
-				"background-image\tproperty"
 			],
 			[
 				"flex",
@@ -48,11 +72,18 @@
 	"buffers":
 	[
 		{
-			"file": "Test_List.html",
+			"file": "Test List.html",
 			"settings":
 			{
-				"buffer_size": 3239,
-				"encoding": "UTF-8",
+				"buffer_size": 3425,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Calculator.html",
+			"settings":
+			{
+				"buffer_size": 3085,
 				"line_ending": "Windows"
 			}
 		}
@@ -89,7 +120,9 @@
 	},
 	"file_history":
 	[
+		"/D/My Workspace/web development/TesTube/Calculator.html",
 		"/D/My Workspace/web development/TesTube/Test_List.html",
+		"/D/My Workspace/web development/Calculator.html",
 		"/D/My Workspace/web development/Peace Works Corporation.html",
 		"/C/Users/Pallavv Malhotra/Desktop/div.html"
 	],
@@ -131,19 +164,47 @@
 			[
 				{
 					"buffer": 0,
-					"file": "Test_List.html",
+					"file": "Test List.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3239,
+						"buffer_size": 3425,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								33,
-								181
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Calculator.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3085,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -155,7 +216,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
