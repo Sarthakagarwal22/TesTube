@@ -17,14 +17,16 @@
 				background-color: #ccc;
 				width: 525px;
 			}
-			.display{
+			input{
 				width: 470px;
+				font-size: 25px;
 				background-color: black;
-				border-style: solid;
-				border-color: white;
-				border-width: 3px;
+				border-width: 3px solid white;
 				margin: 10px;
-				border-radius: 10px;
+				padding: 10px;
+				border-radius: 5px;
+				text-align: right;
+				color: white;
 			}
 			.click{
 				width: 100px;
@@ -34,17 +36,19 @@
 				width: 222px;
 				margin: 10px;
 			}
-			.display h3{
-				font-size: 25px;
-				text-align: right;
-				padding: 10px;
-				color: white;
+			::placeholder {
+ 			 	color: white;
+ 			}
+ 			::-webkit-inner-spin-button, 
+			::-webkit-outer-spin-button { 
+			  	-webkit-appearance: none; 
+				  margin: 0; 
 			}
 			@media(max-width: 550px){
 				.container{
 					width: 300px;
 				}
-				.display{
+				input{
 					width: 260px;
 					border-width: 2px;
 					margin: 5px;
@@ -62,7 +66,7 @@
 				.container{
 					width: 270px;
 				}
-				.display{
+				input{
 					width: 227px;
 					border-width: 2px;
 					margin: 5px;
@@ -76,42 +80,86 @@
 					margin: 3px;
 				}
 			}
-			}
 		</style>
 	</head>
 	<body>
 		<div class="container">
-			<div class="display">
-				<h3>0.</h3>
+				<input type="number" name="" placeholder="0.">
+			<div>
+				<button type="button" class="click btn btn-default" id="7">7</button>
+				<button type="button" class="click btn btn-default" id="8">8</button>
+				<button type="button" class="click btn btn-default" id="9">9</button>
+				<button type="button" class="click btn btn-primary" id="/">/</button>
 			</div>
 			<div>
-				<button type="button" class="click btn btn-default">7</button>
-				<button type="button" class="click btn btn-default">8</button>
-				<button type="button" class="click btn btn-default">9</button>
-				<button type="button" class="click btn btn-primary">/</button>
+				<button type="button" class="click btn btn-default" id="4">4</button>
+				<button type="button" class="click btn btn-default" id="5">5</button>
+				<button type="button" class="click btn btn-default" id="6">6</button>
+				<button type="button" class="click btn btn-primary" id="*">*</button>
 			</div>
 			<div>
-				<button type="button" class="click btn btn-default">4</button>
-				<button type="button" class="click btn btn-default">5</button>
-				<button type="button" class="click btn btn-default">6</button>
-				<button type="button" class="click btn btn-primary">*</button>
+				<button type="button" class="click btn btn-default" id="1">1</button>
+				<button type="button" class="click btn btn-default" id="2">2</button>
+				<button type="button" class="click btn btn-default" id="3">3</button>
+				<button type="button" class="click btn btn-primary" id="-">-</button>
 			</div>
 			<div>
-				<button type="button" class="click btn btn-default">1</button>
-				<button type="button" class="click btn btn-default">2</button>
-				<button type="button" class="click btn btn-default">3</button>
-				<button type="button" class="click btn btn-primary">-</button>
+				<button type="button" class="click btn btn-default" id="00">00</button>
+				<button type="button" class="click btn btn-default" id="0">0</button>
+				<button type="button" class="click btn btn-default" id=".">.</button>
+				<button type="button" class="click btn btn-primary" id="+">+</button>
 			</div>
 			<div>
-				<button type="button" class="click btn btn-default">00</button>
-				<button type="button" class="click btn btn-default">0</button>
-				<button type="button" class="click btn btn-default">.</button>
-				<button type="button" class="click btn btn-primary">+</button>
-			</div>
-			<div>
-				<button type="button" class="large btn btn-danger">Clear</button>
-				<button type="button" class="large btn btn-primary">=</button>
+				<button type="button" class="large btn btn-danger" id="c">Clear</button>
+				<button type="button" class="large btn btn-primary" id="equal">=</button>
 			</div>	
 		</div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var x = null;
+				var y = null;
+				var op = null;
+				$('.click').on("click",function(){
+					if($(this).hasClass("btn-primary")){
+						if($("input[type=number]").val() === ""){
+							alert("Please Enter some value before you proceed");
+						}
+						else{
+							 x = $("input[type=number]").val();
+							console.log(x,y);
+							$("input[type=number]").val("");
+							 op = this.id;
+						}
+					}
+					else{
+							var z = $("input[type=number]").val() + this.id
+							$("input[type=number]").val(z);
+					}
+					
+				});					
+				$('.large').on("click", function(){
+					if(this.id === 'c'){
+						$("input[type=number]").val("");
+					}
+					else if($("input[type=number]").val()){
+						if(op == '+'){
+							$("input[type=number]").val(parseInt(x)+parseInt($("input[type=number]").val()));
+						}
+						else if(op == '-'){
+							$("input[type=number]").val(parseInt(x)-parseInt($("input[type=number]").val()));
+						}
+						else if(op == '*'){
+							$("input[type=number]").val(parseInt(x)*parseInt($("input[type=number]").val()));
+						}
+						else{
+							$("input[type=number]").val(parseInt(x)/parseInt($("input[type=number]").val()));
+						}
+					}
+					else{
+						alert("Please Enter some value before you proceed");
+					}
+				});
+			});
+		</script>
 	</body>
 </html>
