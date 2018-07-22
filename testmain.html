@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<title>Testube.com</title>
+		<script type="text/javascript" src="Verbal Ability.js"></script>
+		<style type="text/css">
+		.main-part{
+			background-color: black;
+			margin-top: 200px;
+		}
+			body {
+			
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 16px;  
+  color: #333;
+  background-color: grey;
+}
+
+
+#question {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 50px;
+  padding:20px;
+ color:white;
+}
+#options {
+  margin: 20px 0;
+}
+.option-btn {
+  font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	width: 45%;
+	height: 70px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	-moz-transition: background .3s linear;
+	-webkit-transition: background .3s linear;
+	-o-transition: background .3s linear;
+	transition: background .3s linear;
+	color: #fff;
+	background-color: #01b1d7;
+	margin: 8px;
+}
+.option-btn:hover
+{
+    background-color: #fff;
+    color: #01b1d7;
+    border-color: #01b1d7;
+}
+
+@media (max-width: 400px) {
+  
+  #question { 
+  	font-size: 16px; 
+  	margin: 20px 0 14px 0; 
+  }  
+ /* #options { 
+	margin: 14px 0 20px 0; 
+} */
+  .option-btn { 
+  	font-size: 16px; 
+  	min-height: 65px; 
+  }  
+  .btn
+  {
+  	display: block;
+  }
+  
+}
+@media(max-width: 550px){
+		body
+		{
+			background-color: red;
+		}
+		}
+	</style>	
+</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-10 col-md-offset-1 text-center">
+					<div class="main-part">
+        				<p id="question">This is our question!</p>
+       						 <div id="options">
+                				<button id="option0" class="btn option-btn option" onclick="checkAnswer(0)">Option1</button>
+                				<button id="option1" class="btn option-btn option" onclick="checkAnswer(1)">Option2</button>
+                				<button id="option2" class="btn option-btn option" onclick="checkAnswer(2)">Option3</button>
+               				    <button id="option3" class="btn option-btn option" onclick="checkAnswer(3)">Option4</button>
+        					  </div>
+                			<button id="submit" class="btn option-btn" onclick="loadQuestion()">Submit</button>
+            		</div>
+       			</div>
+       		</div>
+       	</div>
+
+	</body>
+
+</html>
