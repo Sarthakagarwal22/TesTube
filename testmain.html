@@ -5,7 +5,6 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<title>Testube.com</title>
-		<script type="text/javascript" src="Verbal Ability.js"></script>
 
 		<style type="text/css">
 		.main-part{
@@ -50,8 +49,8 @@
 }
 .option-btn:hover
 {
-    background-color: #fff;
-    color: #01b1d7;
+    background-color: #fff;		
+    color: white;
     border-color: #01b1d7;
 }
 
@@ -102,4 +101,46 @@
 
 	</body>
 
+	<script type="text/javascript">
+		var i = -1;
+		var attempt = 0;
+		const file= window.location.hash.slice(1,window.location.hash.length);
+		var s = document.createElement("script");
+		s.src = file+'.js';
+		document.head.appendChild(s);
+		function loadQuestion()
+		{
+			i++;
+			attempt = 0;
+			var x = document.getElementsByClassName("option");
+			x[0].style.background = "#01B1D7";
+			x[1].style.background = "#01B1D7";
+			x[2].style.background = "#01B1D7";
+			x[3].style.background = "#01B1D7";
+			document.getElementById("question").innerHTML = questions[i].question;
+			document.getElementById("option0").innerHTML = questions[i].options[0];
+			document.getElementById("option1").innerHTML = questions[i].options[1];
+			document.getElementById("option2").innerHTML = questions[i].options[2];
+			document.getElementById("option3").innerHTML = questions[i].options[3];
+		}
+
+		function checkAnswer(opt)
+		{
+			var ans = questions[i].answer;
+			var x = document.getElementsByClassName("option");
+			if(attempt==0)
+			{
+				if(opt==ans)
+				{
+					x[opt].style.background = "#4BB543";
+				}
+				else
+				{
+					x[opt].style.background = "#B33A3A";
+					x[ans].style.background = "#4BB543";
+				}
+				attempt++;
+			}
+		}
+	</script>
 </html>
