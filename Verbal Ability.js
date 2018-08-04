@@ -5,7 +5,7 @@ var questions = [
 		answer: 2,
 	},
 	{
-		question: "When he \n P: did not know \n Q: he was nervous and \n R: heard the hue and cry at midnight \n S: what to do \n The Proper sequence should be:-",
+		question: "When he <br> P: did not know <br> Q: he was nervous and <br> R: heard the hue and cry at midnight <br> S: what to do <br> The Proper sequence should be:-",
 		options: ["RQPS", "QSPR", "SQPR", "PQRS"],
 		answer: 0,
 	},

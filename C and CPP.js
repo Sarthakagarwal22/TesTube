@@ -1,6 +1,6 @@
 var questions = [
 	{
-		question: "How will you print \n on the screen?",
+		question: "How will you print \\n on the screen?",
 		options: ["printf("\n");", "echo"\\n";", "printf('\n');", "printf("\\n");"],
 		answer: 3,
 	},
@@ -35,7 +35,7 @@ var questions = [
 		answer: 3,
 	},
 	{
-		question: "Which of the following statements is correct? [1. An array of references is acceptable.],[2. We can also create a reference to a reference.]",
+		question: "Which of the following statements is correct? <br> 1. An array of references is acceptable. <br> 2. We can also create a reference to a reference.]",
 		options: ["Only 1 is correct.", "Only 2 is correct.", "Both 1 and 2 are correct.", "Both 1 and 2 are incorrect."],
 		answer: 3,
 	},
