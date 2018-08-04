@@ -1,0 +1,151 @@
+/*Commomn Code*/
+.container{
+    background-color: #ccc;
+    max-width: 100%;
+}
+.part{
+    width: 50%;
+}
+/*Question*/
+.main-part{
+    background-color: black;
+}
+body {
+
+    font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: grey;
+}
+
+
+#question {
+    font-size: 30px;
+    font-weight: 600;
+    padding:20px;
+    color:white;
+}
+#options {
+    margin: 20px 0;
+}
+.option-btn {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    width: 45%;
+    height: 70px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    -moz-transition: background .3s linear;
+    -webkit-transition: background .3s linear;
+    -o-transition: background .3s linear;
+    transition: background .3s linear;
+    color: #fff;
+    background-color: #01b1d7;
+    margin: 8px;
+}
+.option-btn:hover
+{
+    background-color: #fff;
+    color: #01b1d7;
+    border-color: #01b1d7;
+}
+#submit{
+    margin-left: 28%;
+}
+@media (max-width: 400px) {
+
+    #question {
+        font-size: 16px;
+        margin: 20px 0 14px 0;
+    }
+    /* #options {
+       margin: 14px 0 20px 0;
+   } */
+    .option-btn {
+        font-size: 16px;
+        min-height: 65px;
+    }
+    .btn
+    {
+        display: block;
+    }
+
+}
+@media(max-width: 550px){
+    body
+    {
+        background-color: red;
+    }
+}
+/*calculator*/
+.calc{
+    padding: 15px;
+    margin-top: 25px;
+
+}
+input{
+    width: 470px;
+    font-size: 25px;
+    background-color: black;
+    border-width: 3px solid white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: right;
+    color: white;
+}
+.click{
+    width: 100px;
+    margin: 10px;
+}
+.large{
+    width: 222px;
+    margin: 10px;
+}
+::placeholder {
+    color: white;
+}
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+@media(max-width: 550px){
+    .container{
+        width: 300px;
+    }
+    input{
+        width: 260px;
+        border-width: 2px;
+        margin: 5px;
+    }
+    .click{
+        width: 54px;
+        margin: 5px;
+    }
+    .large{
+        width: 121px;
+        margin: 5px;
+    }
+}
+@media(max-width: 320px){
+    .container{
+        width: 270px;
+    }
+    input{
+        width: 227px;
+        border-width: 2px;
+        margin: 5px;
+    }
+    .click{
+        width: 50px;
+        margin: 3px;
+    }
+    .large{
+        width: 110px;
+        margin: 3px;
+    }
+}
+
