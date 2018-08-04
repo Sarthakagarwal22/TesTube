@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<title>Testube.com</title>
 		<script type="text/javascript" src="Verbal Ability.js"></script>
+
 		<style type="text/css">
 		.main-part{
 			background-color: black;
@@ -81,7 +82,7 @@
 		}
 	</style>	
 </head>
-	<body>
+	<body onload="loadQuestion()">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-md-10 col-md-offset-1 text-center">
@@ -93,7 +94,7 @@
                 				<button id="option2" class="btn option-btn option" onclick="checkAnswer(2)">Option3</button>
                				    <button id="option3" class="btn option-btn option" onclick="checkAnswer(3)">Option4</button>
         					  </div>
-                			<button id="submit" class="btn option-btn" onclick="loadQuestion()">Submit</button>
+                			<button id="submit" class="btn option-btn" onclick="loadQuestion()">Next</button>
             		</div>
        			</div>
        		</div>
