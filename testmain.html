@@ -17,7 +17,7 @@
 										<button id="option0" class="btn option-btn" onclick="checkAnswer(0)">Option1</button>
 										<button id="option1" class="btn option-btn " onclick="checkAnswer(1)">Option2</button>
 										<button id="option2" class="btn option-btn " onclick="checkAnswer(2)">Option3</button>
-											<button id="option3" class="btn option-btn " onclick="checkAnswer(3)">Option4</button>
+										<button id="option3" class="btn option-btn " onclick="checkAnswer(3)">Option4</button>
 								</div>
 							<button id="submit" class="btn option-btn" onclick="loadQuestion()">Next</button>
 						</div>
@@ -73,7 +73,7 @@
 		{
 			i++;
 			attempt = 0;
-			var x = document.getElementsByClassName("option");
+			var x = document.getElementsByClassName("option-btn");
 			x[0].style.background = "#01B1D7";
 			x[1].style.background = "#01B1D7";
 			x[2].style.background = "#01B1D7";
@@ -88,7 +88,7 @@
 		function checkAnswer(opt)
 		{
 			var ans = questions[i].answer;
-			var x = document.getElementsByClassName("option");
+			var x = document.getElementsByClassName("option-btn");
 			if(attempt==0)
 			{
 				if(opt==ans)

@@ -1,0 +1,120 @@
+body{
+	background-color: #ddd;
+}
+#HeadBanner
+{
+	background-color: cyan;
+	margin-top: 3vmin;
+}
+#Name{
+	margin: 2vmin;
+	text-align: center;
+	color:	#000;
+	font-size: 10vmin;
+	font-family: 'Lobster', cursive;
+}
+#Main{
+	background-color: #000;
+	border-radius: 10px;
+	margin-top: 10vmin;
+	width: 80vw;
+}
+.flex-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.inner{
+	background: url(https://i.imgur.com/CD9P3Th.png);
+	background-size: 25vmin 25vmin;
+	background-position:"center";
+	position: relative;
+	margin: 2%;
+	height: 25vmin;
+	width: 25vmin;
+	border-radius: 10px;
+}
+.overlay{
+	background-color: black;
+	opacity: 0.6;
+	height: 25vmin;
+	width: 25vmin;
+	border-radius: 10px;
+	position: absolute;
+}
+.inner h3{
+	color: white;
+	position: relative;
+	font-size: 40px;
+	font-family: "Bree Serif"
+}
+
+
+
+@media(max-width: 700px){
+	#Name{
+		font-size: 80px;
+	}
+	#Main{
+		margin: 80px;
+		}
+}
+
+
+
+@media(max-width: 600px){
+	#Name{
+		font-size: 60px;
+	}
+	#Main{
+		margin: 60px;
+	}
+
+
+
+@media(max-width: 550px){
+	#Main{
+		margin: 50px;
+		box-shadow: 5px 5px #428bca;
+	}
+	.inner{
+		height: 200px;
+		width: 200px;
+		box-shadow: 5px 5px #428bca;
+	}
+.overlay{
+		opacity: 0.6;
+		height: 200px;
+		width: 200px;
+	}
+	.inner h3{
+		font-size: 30px;
+		font-family: "Bree Serif"
+	}
+}
+
+
+
+@media(max-width: 400px){
+	#Name{
+		font-size: 40px;
+	}
+	#Main{
+		margin: 30px;
+		box-shadow: 5px 5px #428bca;
+	}
+	.inner{
+		height: 150px;
+		width: 150px;
+		box-shadow: 5px 5px #428bca;
+	}
+	.overlay{
+		opacity: 0.6;
+		height: 150px;
+		width: 150px;
+	}
+	.inner h3{
+		font-size: 25px;
+		font-family: "Bree Serif"
+	}
+}
