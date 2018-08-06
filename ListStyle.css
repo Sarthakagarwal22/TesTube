@@ -1,5 +1,8 @@
 body{
-	background-color: #ddd;
+	background-color: #a5a5a5;
+}
+a{
+	text-decoration: none !important;
 }
 #HeadBanner
 {
@@ -14,10 +17,9 @@ body{
 	font-family: 'Lobster', cursive;
 }
 #Main{
-	background-color: #000;
-	border-radius: 10px;
-	margin-top: 10vmin;
-	width: 80vw;
+	background-color: #124068;
+	margin: 10vmin 0 0 0;
+	padding: 4vmin;
 }
 .flex-container{
 	display: flex;
@@ -26,95 +28,63 @@ body{
 }
 .inner{
 	background: url(https://i.imgur.com/CD9P3Th.png);
-	background-size: 25vmin 25vmin;
+	background-size: 15vw 15vw;
 	background-position:"center";
 	position: relative;
-	margin: 2%;
-	height: 25vmin;
-	width: 25vmin;
+	margin: 4vw;
+	height: 15vw;
+	width: 15vw;
 	border-radius: 10px;
 }
 .overlay{
 	background-color: black;
 	opacity: 0.6;
-	height: 25vmin;
-	width: 25vmin;
+	height: 15vw;
+	width: 15vw;
 	border-radius: 10px;
 	position: absolute;
 }
 .inner h3{
 	color: white;
 	position: relative;
-	font-size: 40px;
+	font-size: 2vw;
 	font-family: "Bree Serif"
 }
 
-
-
-@media(max-width: 700px){
-	#Name{
-		font-size: 80px;
-	}
+@media(max-width: 1050px){
 	#Main{
-		margin: 80px;
-		}
-}
-
-
-
-@media(max-width: 600px){
-	#Name{
-		font-size: 60px;
-	}
-	#Main{
-		margin: 60px;
-	}
-
-
-
-@media(max-width: 550px){
-	#Main{
-		margin: 50px;
-		box-shadow: 5px 5px #428bca;
+		padding: 4vw;
 	}
 	.inner{
-		height: 200px;
-		width: 200px;
-		box-shadow: 5px 5px #428bca;
-	}
-.overlay{
-		opacity: 0.6;
-		height: 200px;
-		width: 200px;
-	}
-	.inner h3{
-		font-size: 30px;
-		font-family: "Bree Serif"
-	}
-}
-
-
-
-@media(max-width: 400px){
-	#Name{
-		font-size: 40px;
-	}
-	#Main{
-		margin: 30px;
-		box-shadow: 5px 5px #428bca;
-	}
-	.inner{
-		height: 150px;
-		width: 150px;
-		box-shadow: 5px 5px #428bca;
+		background-size: 22vw 22vw;
+		margin: 4vw;
+		height: 22vw;
+		width: 22vw;
 	}
 	.overlay{
-		opacity: 0.6;
-		height: 150px;
-		width: 150px;
+		height: 22vw;
+		width: 22vw;
 	}
 	.inner h3{
-		font-size: 25px;
-		font-family: "Bree Serif"
+		font-size: 3vw;
+	}
+}
+
+@media(max-width: 700px){
+	#Main{
+		padding: 5vw;
+	}
+	.inner{
+		background-size: 35vw 35vw;
+		margin: 5vw;
+		height: 35vw;
+		width: 35vw;
+	}
+	.overlay{
+		height: 35vw;
+		width: 35vw;
+	}
+	.inner h3{
+		font-size: 4vw;
 	}
 }
