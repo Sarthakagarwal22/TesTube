@@ -13,19 +13,29 @@
 		<link rel="stylesheet" href="style.css">
 		<title>Testube.com</title>
 </head>
-	<body onload="loadQuestion()">
+	<body>
 			<div>
 				<div class="row">
 					<div class="text-center">
 						<div class="main-part">
-							<p id="question">This is our question!</p>
-							 <div id="options">
-										<button id="option0" class="btn option-btn" onclick="checkAnswer(0)">Option1</button>
-										<button id="option1" class="btn option-btn " onclick="checkAnswer(1)">Option2</button>
-										<button id="option2" class="btn option-btn " onclick="checkAnswer(2)">Option3</button>
-										<button id="option3" class="btn option-btn " onclick="checkAnswer(3)">Option4</button>
+							<div id="ready">
+								<button id="launch" class="btn option-btn" onclick="loadQuestion()">Start Test</button>
+							</div>
+							<div id="test">
+								<p id="question">This is our question!</p>
+								<div id="options">
+									<button id="option0" class="btn option-btn" onclick="checkAnswer(0)">Option1</button>
+									<button id="option1" class="btn option-btn " onclick="checkAnswer(1)">Option2</button>
+									<button id="option2" class="btn option-btn " onclick="checkAnswer(2)">Option3</button>
+									<button id="option3" class="btn option-btn " onclick="checkAnswer(3)">Option4</button>
 								</div>
-							<button id="submit" class="btn option-btn" onclick="loadQuestion()">Next</button>
+								<button id="submit" class="btn option-btn" onclick="loadQuestion()">Next</button>
+							</div>
+							<div id="finish">
+								<p id="stat">Your Score is:-</p>
+								<p id="score">Score</p>
+								<button id="back" class="btn option-btn">Take Another Test</button>
+							</div>
 						</div>
 					</div>
 				</div>
