@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+		<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Shrikhand" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Roboto" rel="stylesheet">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="style.css">
 		<title>Testube.com</title>
 </head>
@@ -104,4 +110,52 @@
 			}
 		}
 	</script>
+
+	<script type="text/javascript">
+			$(document).ready(function(){
+				var x = null;
+				var y = null;
+				var op = null;
+				$('.click').on("click",function(){
+					if($(this).hasClass("btn-primary")){
+						if($("input[type=number]").val() === ""){
+							alert("Please Enter some value before you proceed");
+						}
+						else{
+							 x = $("input[type=number]").val();
+							console.log(x,y);
+							$("input[type=number]").val("");
+							 op = this.id;
+						}
+					}
+					else{
+							var z = $("input[type=number]").val() + this.id
+							$("input[type=number]").val(z);
+					}
+					
+				});					
+				$('.large').on("click", function(){
+					if(this.id === 'c'){
+						$("input[type=number]").val("");
+					}
+					else if($("input[type=number]").val()){
+						if(op == '+'){
+							$("input[type=number]").val(parseInt(x)+parseInt($("input[type=number]").val()));
+						}
+						else if(op == '-'){
+							$("input[type=number]").val(parseInt(x)-parseInt($("input[type=number]").val()));
+						}
+						else if(op == '*'){
+							$("input[type=number]").val(parseInt(x)*parseInt($("input[type=number]").val()));
+						}
+						else{
+							$("input[type=number]").val(parseInt(x)/parseInt($("input[type=number]").val()));
+						}
+					}
+					else{
+						alert("Please Enter some value before you proceed");
+					}
+				});
+			});
+		</script>
 </html>
