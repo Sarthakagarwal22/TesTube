@@ -1,17 +1,19 @@
 /*Commomn Code*/
 .container{
     background-color: #ccc;
-    max-width: 100%;
 }
 .part{
     width: 50%;
+}
+.row{
+    margin: 0;
 }
 /*Question*/
 .main-part{
     background-color: black;
 }
 body {
-
+    max-width: 100%;
     font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
     font-size: 16px;
     color: #333;
@@ -22,9 +24,6 @@ body {
 }
 #launch{
     margin: 8vw;
-}
-#test{
-    display: none;
 }
 
 #question {
@@ -108,9 +107,7 @@ body {
 }
 /*calculator*/
 .calc{
-    padding: 15px;
     margin-top: 25px;
-
 }
 input{
     width: 470px;
