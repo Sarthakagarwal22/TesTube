@@ -54,8 +54,8 @@ body {
 }
 .option-btn:hover
 {
-    background-color: #fff;
-    color: #01b1d7;
+    background-color: #fff ;
+    color: #000;
     border-color: #01b1d7;
 }
 #submit{

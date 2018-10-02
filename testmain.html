@@ -80,6 +80,7 @@
 
 	<script type="text/javascript">
 		var i = -1;
+		var score = 0;
 		var attempt = 0;
 		const file= window.location.hash.slice(1,window.location.hash.length);
 		var s = document.createElement("script");
@@ -106,13 +107,15 @@
 
 		function checkAnswer(opt)
 		{
+			console.log(opt);
 			var ans = questions[i].answer;
-			var x = document.getElementsByClassName("option-btn");
-			if(attempt==0)
-			{
+
+			var x = document.getElementsByClassName("options");
+			if(attempt===0){
 				if(opt==ans)
 				{
 					x[opt].style.background = "#4BB543";
+					score++;
 				}
 				else
 				{
@@ -121,6 +124,9 @@
 				}
 				attempt++;
 			}
+			setTimeout(function(){
+				loadQuestion();
+			},1000);
 		}
 
 			$(document).ready(function(){
