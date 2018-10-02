@@ -6,114 +6,47 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-		<style>
-			body{
-				font-family: "Bree Serif";
-			}
-			.container{
-				background-color: #ccc;
-				width: 525px;
-			}
-			input{
-				width: 470px;
-				font-size: 25px;
-				background-color: black;
-				border-width: 3px solid white;
-				margin: 10px;
-				padding: 10px;
-				border-radius: 5px;
-				text-align: right;
-				color: white;
-			}
-			.click{
-				width: 100px;
-				margin: 10px;
-			}
-			.large{
-				width: 222px;
-				margin: 10px;
-			}
-			::placeholder {
- 			 	color: white;
- 			}
- 			::-webkit-inner-spin-button, 
-			::-webkit-outer-spin-button { 
-			  	-webkit-appearance: none; 
-				  margin: 0; 
-			}
-			@media(max-width: 550px){
-				.container{
-					width: 300px;
-				}
-				input{
-					width: 260px;
-					border-width: 2px;
-					margin: 5px;
-				}
-				.click{
-					width: 54px;
-					margin: 5px;
-				}
-				.large{
-					width: 121px;
-					margin: 5px;
-				}
-			}
-			@media(max-width: 320px){
-				.container{
-					width: 270px;
-				}
-				input{
-					width: 227px;
-					border-width: 2px;
-					margin: 5px;
-				}
-				.click{
-					width: 50px;
-					margin: 3px;
-				}
-				.large{
-					width: 110px;
-					margin: 3px;
-				}
-			}
-		</style>
 	</head>
 	<body>
-		<div class="container">
-				<input type="number" name="" placeholder="0.">
-			<div>
-				<button type="button" class="click btn btn-default" id="7">7</button>
-				<button type="button" class="click btn btn-default" id="8">8</button>
-				<button type="button" class="click btn btn-default" id="9">9</button>
-				<button type="button" class="click btn btn-primary" id="/">/</button>
-			</div>
-			<div>
-				<button type="button" class="click btn btn-default" id="4">4</button>
-				<button type="button" class="click btn btn-default" id="5">5</button>
-				<button type="button" class="click btn btn-default" id="6">6</button>
-				<button type="button" class="click btn btn-primary" id="*">*</button>
-			</div>
-			<div>
-				<button type="button" class="click btn btn-default" id="1">1</button>
-				<button type="button" class="click btn btn-default" id="2">2</button>
-				<button type="button" class="click btn btn-default" id="3">3</button>
-				<button type="button" class="click btn btn-primary" id="-">-</button>
-			</div>
-			<div>
-				<button type="button" class="click btn btn-default" id="00">00</button>
-				<button type="button" class="click btn btn-default" id="0">0</button>
-				<button type="button" class="click btn btn-default" id=".">.</button>
-				<button type="button" class="click btn btn-primary" id="+">+</button>
-			</div>
-			<div>
-				<button type="button" class="large btn btn-danger" id="c">Clear</button>
-				<button type="button" class="large btn btn-primary" id="equal">=</button>
-			</div>	
 		</div>
+				<div class="">
+					<div class="calc">
+
+						<input type="number" name="" placeholder="0.">
+						<div>
+							<button type="button" class="click btn btn-default" id="7">7</button>
+							<button type="button" class="click btn btn-default" id="8">8</button>
+							<button type="button" class="click btn btn-default" id="9">9</button>
+							<button type="button" class="click btn btn-primary" id="/">/</button>
+						</div>
+						<div>
+							<button type="button" class="click btn btn-default" id="4">4</button>
+							<button type="button" class="click btn btn-default" id="5">5</button>
+							<button type="button" class="click btn btn-default" id="6">6</button>
+							<button type="button" class="click btn btn-primary" id="*">*</button>
+						</div>
+						<div>
+							<button type="button" class="click btn btn-default" id="1">1</button>
+							<button type="button" class="click btn btn-default" id="2">2</button>
+							<button type="button" class="click btn btn-default" id="3">3</button>
+							<button type="button" class="click btn btn-primary" id="-">-</button>
+						</div>
+						<div>
+							<button type="button" class="click btn btn-default" id="00">00</button>
+							<button type="button" class="click btn btn-default" id="0">0</button>
+							<button type="button" class="click btn btn-default" id=".">.</button>
+							<button type="button" class="click btn btn-primary" id="+">+</button>
+						</div>
+						<div>
+							<button type="button" class="large btn btn-danger" id="c">Clear</button>
+							<button type="button" class="large btn btn-primary" id="equal">=</button>
+						</div>
+			</div>
+		
 		<script type="text/javascript">
 			$(document).ready(function(){
 				var x = null;

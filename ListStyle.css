@@ -1,0 +1,90 @@
+body{
+	background-color: #a5a5a5;
+}
+a{
+	text-decoration: none !important;
+}
+#HeadBanner
+{
+	background-color: cyan;
+	margin-top: 3vmin;
+}
+#Name{
+	margin: 2vmin;
+	text-align: center;
+	color:	#000;
+	font-size: 10vmin;
+	font-family: 'Lobster', cursive;
+}
+#Main{
+	background-color: #124068;
+	margin: 10vmin 0 0 0;
+	padding: 4vmin;
+}
+.flex-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.inner{
+	background: url(https://i.imgur.com/CD9P3Th.png);
+	background-size: 15vw 15vw;
+	background-position:"center";
+	position: relative;
+	margin: 4vw;
+	height: 15vw;
+	width: 15vw;
+	border-radius: 10px;
+}
+.overlay{
+	background-color: black;
+	opacity: 0.6;
+	height: 15vw;
+	width: 15vw;
+	border-radius: 10px;
+	position: absolute;
+}
+.inner h3{
+	color: white;
+	position: relative;
+	font-size: 2vw;
+	font-family: "Bree Serif"
+}
+
+@media(max-width: 1050px){
+	#Main{
+		padding: 4vw;
+	}
+	.inner{
+		background-size: 22vw 22vw;
+		margin: 4vw;
+		height: 22vw;
+		width: 22vw;
+	}
+	.overlay{
+		height: 22vw;
+		width: 22vw;
+	}
+	.inner h3{
+		font-size: 3vw;
+	}
+}
+
+@media(max-width: 700px){
+	#Main{
+		padding: 5vw;
+	}
+	.inner{
+		background-size: 35vw 35vw;
+		margin: 5vw;
+		height: 35vw;
+		width: 35vw;
+	}
+	.overlay{
+		height: 35vw;
+		width: 35vw;
+	}
+	.inner h3{
+		font-size: 4vw;
+	}
+}
