@@ -12,7 +12,7 @@ var questions = [
   
 },
 {
-  question: "If a person walks at 14 km/hr instead of 10 km/hr, he would have walked 20 km more. The actual distance travelled by him is:    
+  question: "If a person walks at 14 km/hr instead of 10 km/hr, he would have walked 20 km more. The actual distance travelled by him is:",    
   options: ["50km","56km","70km","76km"],
     answer:1
   
