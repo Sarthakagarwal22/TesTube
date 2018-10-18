@@ -34,13 +34,16 @@ body {
 }
 #options {
     margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 .option-btn {
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
     font-weight: 600;
     width: 45%;
-    height: 70px;
+    min-height: 70px;
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     border-radius: 50px;
@@ -51,7 +54,13 @@ body {
     color: #fff;
     background-color: #01b1d7;
     margin: 8px;
+    height: auto;
+    white-space: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .option-btn:hover
 {
     background-color: #fff ;
@@ -92,10 +101,6 @@ body {
     .option-btn {
         font-size: 16px;
         min-height: 65px;
-    }
-    .btn
-    {
-        display: block;
     }
 
 }
