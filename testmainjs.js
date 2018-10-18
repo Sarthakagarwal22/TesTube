@@ -11,22 +11,28 @@ function loadQuestion()
 	$("#ready").hide();
 	$("#test").show();
 	i++;
-	attempt = 0;
-	var x = document.getElementsByClassName("options");
-	x[0].style.background = "#01B1D7";
-	x[1].style.background = "#01B1D7";
-	x[2].style.background = "#01B1D7";
-	x[3].style.background = "#01B1D7";
-	document.getElementById("question").innerHTML = questions[i].question;
-	document.getElementById("option0").innerHTML = questions[i].options[0];
-	document.getElementById("option1").innerHTML = questions[i].options[1];
-	document.getElementById("option2").innerHTML = questions[i].options[2];
-	document.getElementById("option3").innerHTML = questions[i].options[3];
+	if(i<10){
+		attempt = 0;
+		var x = document.getElementsByClassName("options");
+		x[0].style.background = "#01B1D7";
+		x[1].style.background = "#01B1D7";
+		x[2].style.background = "#01B1D7";
+		x[3].style.background = "#01B1D7";
+		document.getElementById("question").innerHTML = questions[i].question;
+		document.getElementById("option0").innerHTML = questions[i].options[0];
+		document.getElementById("option1").innerHTML = questions[i].options[1];
+		document.getElementById("option2").innerHTML = questions[i].options[2];
+		document.getElementById("option3").innerHTML = questions[i].options[3];
+	}
+	else{
+		$("#test").hide();
+		$("#finish").show();
+		$(".score").html(score);
+	}
 }
 
 function checkAnswer(opt)
 {
-	console.log(opt);
 	var ans = questions[i].answer;
 
 	var x = document.getElementsByClassName("options");
@@ -43,6 +49,7 @@ function checkAnswer(opt)
 		}
 		attempt++;
 	}
+	console.log(score);
 	setTimeout(function(){
 		loadQuestion();
 	},1000);
@@ -53,7 +60,6 @@ function checkAnswer(opt)
 		var y = null;
 		var op = null;
 		$("#test").hide();
-
 		$('.click').on("click",function(){
 			if($(this).hasClass("btn-primary")){
 				if($("input[type=number]").val() === ""){
